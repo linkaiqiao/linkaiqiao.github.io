@@ -7,18 +7,21 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 40px; }
-        .container { max-width: 900px; margin: 0 auto; background: white; border-radius: 20px; padding: 60px; box-shadow: 0 25px 80px rgba(0,0,0,0.18); }
+        .container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 20px; padding: 60px; box-shadow: 0 25px 80px rgba(0,0,0,0.18); }
         .logo { width: 140px; height: 140px; margin: 0 auto 35px; background: linear-gradient(135deg, #6200EE 0%, #7B1FA2 100%); border-radius: 28px; display: flex; align-items: center; justify-content: center; color: white; font-size: 56px; box-shadow: 0 10px 30px rgba(98, 0, 238, 0.3); }
         h1 { text-align: center; color: #1a1a2e; font-size: 36px; margin-bottom: 16px; font-weight: 700; }
         .tagline { text-align: center; color: #5a5a7a; font-size: 18px; margin-bottom: 50px; }
         
         /* 功能特性区域 */
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; margin-bottom: 50px; }
-        .feature { text-align: center; padding: 24px; background: linear-gradient(145deg, #f8f9fa, #ffffff); border-radius: 16px; border: 1px solid #e8e8f0; transition: all 0.3s ease; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-bottom: 50px; }
+        .feature { text-align: center; padding: 20px; background: linear-gradient(145deg, #f8f9fa, #ffffff); border-radius: 16px; border: 1px solid #e8e8f0; transition: all 0.3s ease; }
         .feature:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.08); border-color: #6200EE; }
-        .feature-image { width: 100%; height: 200px; border-radius: 12px; margin-bottom: 16px; object-fit: cover; border: 2px solid #eee; }
-        .feature h3 { color: #1a1a2e; margin-bottom: 10px; font-size: 18px; }
-        .feature p { color: #666; font-size: 14px; line-height: 1.7; }
+        .feature-image { width: 100%; height: 160px; border-radius: 10px; margin-bottom: 14px; object-fit: cover; border: 2px solid #eee; }
+        .feature h3 { color: #1a1a2e; margin-bottom: 8px; font-size: 16px; }
+        .feature p { color: #666; font-size: 13px; line-height: 1.6; }
+        
+        /* 功能分类标题 */
+        .feature-section-title { text-align: center; color: #333; font-size: 20px; margin-bottom: 25px; padding-top: 20px; border-top: 1px dashed #ddd; }
         
         /* 下载区域 */
         .download { text-align: center; padding: 40px; background: linear-gradient(135deg, #6200EE 0%, #7B1FA2 100%); border-radius: 16px; color: white; margin-bottom: 50px; }
@@ -53,32 +56,62 @@
         <h1>课程表管理系统</h1>
         <p class="tagline">高效管理您的课程安排，让学习更轻松</p>
         
-        <!-- 功能特性 -->
+        <!-- 核心功能区域 -->
         <div class="features">
             <div class="feature">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20app%20login%20page%20with%20purple%20theme%20and%20wechat%20login%20button%20modern%20UI%20design&image_size=portrait_4_3" alt="安全登录" class="feature-image">
+                <img src="https://github.com/linkaiqiao/linkaiqiao.github.io/blob/ffc86c5371938f66acc1663c60bcee5b20132b84/images/e8375989641d3ed52ee799b16785c227.jpg" alt="安全登录" class="feature-image">
                 <h3>安全登录</h3>
-                <p>支持账号密码登录和微信快捷登录，安全便捷</p>
+                <p>支持账号密码和微信快捷登录</p>
             </div>
             <div class="feature">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20app%20weekly%20class%20schedule%20with%20colorful%20course%20blocks%20purple%20header%20modern%20UI&image_size=portrait_4_3" alt="可视化课表" class="feature-image">
+                <img src="https://raw.githubusercontent.com/linkaiqiao/linkaiqiao.github.io/ffc86c5371938f66acc1663c60bcee5b20132b84/images/753bec804dd627dc240d6cb93e3bb40e.jpg" alt="可视化课表" class="feature-image">
                 <h3>可视化课表</h3>
-                <p>直观的周视图课程表，不同课程显示不同颜色，一目了然</p>
+                <p>直观的周视图课程表，一目了然</p>
             </div>
             <div class="feature">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20app%20add%20course%20form%20dialog%20with%20input%20fields%20purple%20theme%20modern%20UI&image_size=portrait_4_3" alt="课程管理" class="feature-image">
+                <img src="添加课程：https://github.com/linkaiqiao/linkaiqiao.github.io/blob/ffc86c5371938f66acc1663c60bcee5b20132b84/images/e65059da06c481356e628ea18b3065bc.jpg" alt="课程管理" class="feature-image">
                 <h3>课程管理</h3>
-                <p>轻松添加、编辑和删除课程，支持批量操作</p>
+                <p>轻松添加、编辑和删除课程</p>
             </div>
             <div class="feature">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20app%20schedule%20management%20dialog%20with%20list%20of%20schedules%20purple%20theme%20modern%20UI&image_size=portrait_4_3" alt="课表管理" class="feature-image">
+                <img src="https://raw.githubusercontent.com/linkaiqiao/linkaiqiao.github.io/ffc86c5371938f66acc1663c60bcee5b20132b84/images/9a15653e8441fa3e3d61830d73ff846a.jpg" alt="课表管理" class="feature-image">
                 <h3>课表管理</h3>
-                <p>支持多个课表切换，轻松管理不同学期的课程安排</p>
+                <p>支持多个课表切换管理</p>
             </div>
             <div class="feature">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20app%20notification%20message%20center%20with%20search%20bar%20purple%20theme%20modern%20UI&image_size=portrait_4_3" alt="消息通知" class="feature-image">
+                <img src="https://github.com/linkaiqiao/linkaiqiao.github.io/blob/ffc86c5371938f66acc1663c60bcee5b20132b84/images/9bbaf1872a216e629c57cddd345965c7.jpg" alt="消息通知" class="feature-image">
                 <h3>消息通知</h3>
-                <p>系统消息推送，及时获取课程相关通知和提醒</p>
+                <p>及时获取系统消息推送</p>
+            </div>
+        </div>
+        
+        <!-- 进阶功能区域 -->
+        <h2 class="feature-section-title">⚙️ 进阶功能</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="https://raw.githubusercontent.com/linkaiqiao/linkaiqiao.github.io/ffc86c5371938f66acc1663c60bcee5b20132b84/images/1e0a0167dadedc256439e5b51efc9fac.jpg" alt="批量操作" class="feature-image">
+                <h3>批量操作</h3>
+                <p>一键开启/关闭所有课程提醒</p>
+            </div>
+            <div class="feature">
+                <img src="https://github.com/linkaiqiao/linkaiqiao.github.io/blob/ffc86c5371938f66acc1663c60bcee5b20132b84/images/99bc0be625ca92e6b5d3a655d370c546.jpg" alt="提醒管理" class="feature-image">
+                <h3>提醒管理</h3>
+                <p>统一管理所有课程提醒设置</p>
+            </div>
+            <div class="feature">
+                <img src="https://raw.githubusercontent.com/linkaiqiao/linkaiqiao.github.io/ffc86c5371938f66acc1663c60bcee5b20132b84/images/0469db197f828e54a2f8ba1eb8fa88d1.jpg" alt="节数设置" class="feature-image">
+                <h3>节数设置</h3>
+                <p>自定义上午、下午、晚上课程节数</p>
+            </div>
+            <div class="feature">
+                <img src="https://github.com/linkaiqiao/linkaiqiao.github.io/blob/ffc86c5371938f66acc1663c60bcee5b20132b84/images/913e844b06361e1e953428017e18983b.jpg" alt="时间设置" class="feature-image">
+                <h3>时间设置</h3>
+                <p>自定义上课时间和课间休息</p>
+            </div>
+            <div class="feature">
+                <img src="https://raw.githubusercontent.com/linkaiqiao/linkaiqiao.github.io/ffc86c5371938f66acc1663c60bcee5b20132b84/images/b33c22733f091e248e9368222d4260c1.jpg" alt="课程操作" class="feature-image">
+                <h3>课程操作</h3>
+                <p>长按课程快速编辑或删除</p>
             </div>
         </div>
         
